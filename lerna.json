@@ -1,0 +1,8 @@
+{
+  "packages": [
+    "stretcher",
+    "stretcher-loader",
+    "stretcher-importer"
+  ],
+  "version": "0.0.0"
+}
