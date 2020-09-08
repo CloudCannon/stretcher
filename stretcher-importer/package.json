@@ -1,6 +1,6 @@
 {
   "name": "stretcher-importer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Sass importer for stretcher",
   "main": "lib/index.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": "@LiamBigelow",
   "license": "MIT",
   "dependencies": {
-    "stretcher": "^0.0.1"
-  }
+    "stretcher": ">0.1.0"
+  },
+  "gitHead": "ca810e95460cebd964d4ad6a026e1f8041d8dd00"
 }

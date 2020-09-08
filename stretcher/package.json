@@ -1,6 +1,6 @@
 {
   "name": "stretcher",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Stretcher core engine",
   "main": "lib/index.js",
   "scripts": {
@@ -14,5 +14,6 @@
     "on-build-webpack": "^0.1.0",
     "raw-loader": "^4.0.1",
     "webpack": "^4.44.1"
-  }
+  },
+  "gitHead": "ca810e95460cebd964d4ad6a026e1f8041d8dd00"
 }
