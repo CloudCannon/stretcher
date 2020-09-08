@@ -1,6 +1,6 @@
 {
   "name": "stretcher-loader",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Webpack loader for stretcher",
   "main": "lib/index.js",
   "scripts": {
