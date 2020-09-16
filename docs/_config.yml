@@ -2,3 +2,6 @@ title: Stretcher Docs
 email: liam@cloudcannon.com
 baseurl: "" 
 url: "" 
+
+plugins:
+  - jekyll-stretcher
