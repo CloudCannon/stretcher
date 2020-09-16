@@ -2,18 +2,18 @@ const stretcherMixin = `// START INJECTED STRETCHER
 $stretcher-min: 375px !default;
 $stretcher-max: 1440px !default;
 
-@mixin stretcher-double-scale($properties, $min-value, $max-value) {
+@mixin stretcher-double-scale($properties, $min-value, $max-value, $smin, $smax) {
   @each $property in $properties {
     #{$property}: $min-value;
   }
 
-  @media (min-width: $stretcher-min) {
+  @media (min-width: $smin) {
     @each $property in $properties {
-      #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$stretcher-min}) / #{strip-unit($stretcher-max - $stretcher-min)});
+      #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$smin}) / #{strip-unit($smax - $smin)});
     }
   }
 
-  @media (min-width: $stretcher-max) {
+  @media (min-width: $smax) {
     @each $property in $properties {
       #{$property}: $max-value;
     }
@@ -59,7 +59,7 @@ module.exports = function(fileContents) {
 			warning += `${indentation}@warn "Relative units may not work with the scaling mixin (${minUnit})";\n`;
 		}
 
-		lines[i] = `${warning}${indentation}@include stretcher-double-scale(${declaration}, ${minVal}${minUnit}, ${maxVal}${maxUnit});`;
+		lines[i] = `${warning}${indentation}@include stretcher-double-scale(${declaration}, ${minVal}${minUnit}, ${maxVal}${maxUnit}, $stretcher-min, $stretcher-max);`;
 	}
 
 	if (matched) lines.unshift(stretcherMixin);

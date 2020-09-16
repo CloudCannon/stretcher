@@ -24,7 +24,7 @@ webpack({
                 }, {
                     loader: require.resolve('raw-loader')
                 }, {
-                	loader: require.resolve('./lib/index.js')
+                	loader: require.resolve('./dev-loader.js')
                 }
             ]
         }]
