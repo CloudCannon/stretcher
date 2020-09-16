@@ -1,0 +1,19 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/water.min.css">
+	<link rel="stylesheet" href="/assets/all.css">
+	<title>Stretcher Docs</title>
+</head>
+<body>
+	<div class="js-toc"></div>
+	<div class="content">{{ content }}</div>
+	{% if page.footer_markdown %}
+	<footer>{{ page.footer_markdown | markdownify }}</footer>
+	{% endif %}
+</body>
+</html>
