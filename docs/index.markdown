@@ -19,6 +19,8 @@ Stretcher is a custom SCSS syntax for scaling values between two screen sizes.
 4. 🕺 `min:700px | max:1000px`
 5. 🕺 `min:800px | max: 900px`
 
+---
+
 ## Syntax
 Stretcher lines look like this: `font-size: 12px -> 24px;`  
 This means the following: 
@@ -35,6 +37,8 @@ width: 100cm -> 1000cm;
 ```
 
 However, variable values `(%, vw, vh, vmin, vmax)` aren't calculated correctly in CSS so don't yet work as expected.
+
+---
 
 ## Configuration
 Stretcher pulls the min and max screen sizes from the SCSS variables, `$stretcher-min` and `$stretcher-max`  
@@ -63,6 +67,7 @@ $stretcher-max: 1440px;
 }
 ```
 
+---
 
 ## Installation
 
