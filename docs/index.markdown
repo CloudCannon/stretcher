@@ -73,6 +73,12 @@ group :jekyll_plugins do
     gem "jekyll-stretcher", "~> 0.1"
 end
 ```
+You may also need the following in you `_config.yml`
+```
+plugins:
+  - jekyll-stretcher
+```
+
 
 ### Webpack
 If you're transforming SCSS files through webpack, you can use the `stretcher-loader` npm package.
