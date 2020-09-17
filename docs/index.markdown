@@ -9,7 +9,8 @@ footer_markdown: >-
 ---
 
 # Stretcher Docs
-Stretcher is a custom SCSS syntax for scaling values between two screen sizes.
+Stretcher is a custom SCSS syntax for scaling values between two screen sizes.  
+The main use case of this package is to interpolate between values provided in a design. If given a mobile and desktop design, plugging in the values from each into your SCSS then interpolates all breakpoints in between. 
 
 ## Demo
 `font-size: 10px -> 25px;`
