@@ -81,7 +81,7 @@ GOOSE
             end
           end
 
-          if relative.empty?
+          if !relative || relative.empty?
             Import.new(path)
             return
           end
